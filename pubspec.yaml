@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  supabase_flutter: ^2.8.0
+  supabase_flutter: 2.8.0
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
@@ -19,6 +19,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-dependency_overrides:
-  app_links: ^5.0.0
