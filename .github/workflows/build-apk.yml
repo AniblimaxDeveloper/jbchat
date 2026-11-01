@@ -19,8 +19,10 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.0'
+          flutter-version: '3.24.5'
           channel: 'stable'
+
+      - run: flutter create . --platforms=android --org com.jbchat --project-name jbchat
 
       - run: flutter pub get
 
