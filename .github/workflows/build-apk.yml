@@ -26,9 +26,7 @@ jobs:
 
       - run: flutter pub get
 
-      - run: dart run flutter_launcher_icons
-
-      - run: flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }}
+      - run: flutter build apk --release --dart-define=SUPABASE_URL=${{ secrets.SUPABASE_URL }} --dart-define=SUPABASE_ANON_KEY=${{ secrets.SUPABASE_ANON_KEY }} --dart-define=dart.library.io.force_staggered_ipv6_lookup=true
 
       - uses: actions/upload-artifact@v4
         with:
